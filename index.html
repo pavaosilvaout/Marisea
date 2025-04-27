@@ -5,73 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARISEA - Vista sua Fé</title>
-   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <style>
        body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Aqui fica Arial para todo o site */
-    background: linear-gradient(135deg, #2D3436, #636e72);
-    color: #fff;
-    text-align: center;
-    overflow-x: hidden;
-}
+            margin: 0;
+            font-family: Arial, sans-serif; /* Aqui fica Arial para todo o site */
+            background: linear-gradient(135deg, #2D3436, #636e72);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
 
-header {
-    padding: 40px 20px;
-    animation: fadeIn 2s ease;
-}
+        header {
+            padding: 40px 20px;
+            animation: fadeIn 2s ease;
+        }
 
-header img {
-    max-width: 250px;
-    margin-bottom: 20px;
-}
+        header img {
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
 
-.frase-impacto {
-    font-family: 'Rock Salt', cursive; /* Só aqui usa Rock Salt */
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 20px 0;
-    animation: fadeIn 3s ease;
-    color: #ffffff; /* Branco */
-}
+        .frase-impacto {
+            font-family: 'Rock Salt', cursive; /* Só aqui usa Rock Salt */
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+            animation: fadeIn 3s ease;
+            color: #ffffff; /* Branco */
+            display: inline-block;
+            width: 100%; /* Faz a frase ocupar toda a largura disponível */
+        }
 
-.botao {
-    background-color: #FF5733;
-    color: #fff;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: background 0.3s;
-}
+        /* Estilo para a imagem de São Francisco com o mesmo comprimento da frase */
+        .imagem-sao-francisco {
+            width: 100%; /* A imagem ocupa toda a largura disponível */
+            max-width: 600px; /* Limita a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-top: 20px;
+            animation: fadeIn 4s ease;
+        }
 
-.botao:hover {
-    background-color: #e74c3c;
-}
+        .botao {
+            background-color: #FF5733;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
 
-footer {
-    background: #2d3436;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #fff;
-    animation: fadeIn 2s ease;
-}
+        .botao:hover {
+            background-color: #e74c3c;
+        }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+        footer {
+            background: #2d3436;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-<img src="marisea-logo.png" alt="Logo MARISEA">
+    <img src="marisea-logo.png" alt="Logo MARISEA">
     <div class="frase-impacto">"Ide e pregai; se necessário, use palavras." — São Francisco de Assis</div>
+    
+    <!-- Imagem de São Francisco com o mesmo comprimento da frase -->
+    <img src="sao-francisco.png" alt="São Francisco de Assis" class="imagem-sao-francisco">
+    
     <a href="catalogo.html" class="botao">Ver Catálogo</a>
 </header>
 
