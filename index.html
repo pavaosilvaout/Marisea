@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -37,11 +36,13 @@
             width: 100%; /* Faz a frase ocupar toda a largura disponível */
         }
 
-        <img src="images/imagem-sao-francisco.png" alt="São Francisco de Assis" class="imagem-sao-francisco"> {
+        /* Estilo para a imagem de São Francisco com o mesmo comprimento da frase */
+        .imagem-sao-francisco {
             width: 100%; /* A imagem ocupa toda a largura disponível */
             max-width: 600px; /* Limita a largura máxima da imagem */
             height: auto; /* Mantém a proporção da imagem */
             margin-top: 20px;
+            margin-bottom: 20px; /* Espaçamento abaixo da imagem */
             animation: fadeIn 4s ease;
         }
 
@@ -83,9 +84,10 @@
     <img src="marisea-logo.png" alt="Logo MARISEA">
     <div class="frase-impacto">"Ide e pregai; se necessário, use palavras." — São Francisco de Assis</div>
     
-    <!-- Imagem de São Francisco com o mesmo comprimento da frase -->
-    <img src="sao-francisco.png" alt="São Francisco de Assis" class="imagem-sao-francisco">
+    <!-- Aqui é onde você vai inserir a imagem de São Francisco -->
+    <img src="imagem-sao-francisco.png" alt="São Francisco de Assis" class="imagem-sao-francisco">
     
+    <!-- Botão para ver o catálogo -->
     <a href="catalogo.html" class="botao">Ver Catálogo</a>
 </header>
 
