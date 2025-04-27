@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARISEA - Vista sua Fé</title>
+    <title>Catálogo - MARISEA</title>
     <link href="https://fonts.googleapis.com/css2?family=Rogenz&display=swap" rel="stylesheet">
     <style>
         body {
@@ -23,12 +23,18 @@
             max-width: 250px;
             margin-bottom: 20px;
         }
-        .frase-impacto {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 20px 0;
-            animation: fadeIn 3s ease;
-            color: #FF5733;
+        .catalogo-item {
+            margin: 30px 0;
+        }
+        .catalogo-imagens img {
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .catalogo-imagens img:hover {
+            transform: scale(1.05);
         }
         .botao {
             background-color: #FF5733;
@@ -64,9 +70,21 @@
 
 <header>
     <img src="LOGO-MARISEA.png" alt="Logo Marisea">
-    <div class="frase-impacto">"Ide e pregai; se necessário, use palavras." — São Francisco de Assis</div>
-    <a href="catalogo.html" class="botao">Ver Catálogo</a>
+    <div class="frase-impacto">Confira nosso catálogo de camisas!</div>
+    <a href="index.html" class="botao">Voltar para a página inicial</a>
 </header>
+
+<section id="catalogo">
+    <h2>Nossas Camisas</h2>
+    <div class="catalogo-item">
+        <h3>Camisa Modelo 1</h3>
+        <div class="catalogo-imagens">
+            <img src="frente1.jpg" alt="Frente Camisa 1">
+            <img src="verso1.jpg" alt="Verso Camisa 1">
+        </div>
+    </div>
+    <!-- Repita para outros modelos -->
+</section>
 
 <footer>
     &copy; 2025 MARISEA. Todos os direitos reservados.
