@@ -2,85 +2,74 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MARISEA | Camisas Católicas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MARISEA - Camisas Católicas</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
-      background-color: #ffffff;
-      color: #001f3f;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #003366;
+      background-color: white;
     }
 
     header {
-      background-color: #001f3f;
-      padding: 20px 60px;
+      background-color: #003366;
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem 2rem;
     }
 
-    header img {
-      height: 40px;
-    }
-
-    nav {
+    .logo {
       display: flex;
-      gap: 30px;
       align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
     }
 
     nav a {
       color: white;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: 500;
     }
 
-    .btn-header {
+    .buy-button {
       background-color: white;
-      color: #001f3f;
-      padding: 10px 20px;
-      border-radius: 20px;
+      color: #003366;
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
       text-decoration: none;
-      font-weight: 600;
+      border-radius: 5px;
+      font-weight: bold;
     }
 
     .hero {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px 60px;
-      background: linear-gradient(to right, #ffffff, #e6f0fa);
+      padding: 4rem 2rem;
+      background-color: #e0efff;
     }
 
     .hero-text {
       max-width: 50%;
     }
 
-    .hero-text h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      font-weight: 800;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .hero-text a {
-      background-color: #004b8d;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
 
     .hero img {
@@ -88,81 +77,78 @@
       border-radius: 10px;
     }
 
-    .sobre {
+    .about {
       display: flex;
-      padding: 80px 60px;
       align-items: center;
-      justify-content: space-between;
+      padding: 4rem 2rem;
     }
 
-    .sobre-text {
-      max-width: 50%;
+    .about-text {
+      max-width: 60%;
     }
 
-    .sobre-text h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      font-weight: 700;
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
-    .sobre-text p {
-      font-size: 18px;
-      line-height: 1.6;
+    .about p {
+      font-size: 1.1rem;
     }
 
-    .sobre img {
-      max-width: 40%;
+    .about img {
+      max-width: 35%;
+      margin-left: 2rem;
       border-radius: 10px;
     }
 
     footer {
-      background-color: #001f3f;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 40px 20px;
-    }
-
-    footer p {
-      margin-top: 10px;
-      font-size: 14px;
+      padding: 1.5rem 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo-marisea.png" alt="Logo MARISEA" />
+    <div class="logo">
+      <img src="logo-marisea.png" alt="Logo MARISEA" />
+      MARISEA
+    </div>
     <nav>
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
-      <a href="#colecao">Coleção</a>
-      <a href="#missao">Missão</a>
       <a href="#contato">Contato</a>
-      <a href="#comprar" class="btn-header">Compre Agora</a>
+      <a class="buy-button" href="https://wa.me/5547991875082?text=Olá%2C%20tenho%20interesse%20em%20comprar%20uma%20camisa%20da%20MARISEA!" target="_blank">Compre Agora</a>
     </nav>
   </header>
 
   <section class="hero" id="inicio">
     <div class="hero-text">
-      <h1>Camisas que carregam fé.</h1>
-      <p>Vista sua espiritualidade com estilo. Conheça nossas peças únicas inspiradas na fé católica.</p>
-      <a href="#colecao">Conheça a Coleção</a>
+      <h1>Vestindo fé com estilo.</h1>
+      <p>Camisas católicas criadas com propósito e design exclusivo.</p>
+      <a class="buy-button" href="https://wa.me/5547991875082?text=Olá%2C%20tenho%20interesse%20em%20comprar%20uma%20camisa%20da%20MARISEA!" target="_blank">Falar no WhatsApp</a>
     </div>
-    <img src="camisa-marisea.jpg" alt="Camisa Católica MARISEA" />
+    <img src="camisa-marisea.png" alt="Camisa MARISEA" />
   </section>
 
-  <section class="sobre" id="sobre">
-    <div class="sobre-text">
+  <section class="about" id="sobre">
+    <div class="about-text">
       <h2>O que é a MARISEA?</h2>
       <p>
-        A MARISEA nasceu em 2024 com o propósito de evangelizar através da moda. Criamos camisas católicas que comunicam fé, identidade e missão. Nossas peças são pensadas para jovens e adultos que desejam carregar o amor de Deus onde estiverem.
+        Fundada em 2024, a MARISEA nasceu com a missão de espalhar a mensagem de Cristo através da arte nas roupas. Cada camisa é criada com inspiração católica, unindo estilo, fé e propósito. Nossa marca representa uma geração que evangeliza com criatividade.
       </p>
     </div>
-    <img src="fundador-marisea.jpg" alt="Fundador da MARISEA" />
+    <img src="fundador-marisea.jpg" alt="Fundador da MARISEA">
   </section>
 
-  <footer>
-    <strong>MARISEA © 2025</strong>
-    <p>Vista a fé. Viva o propósito.</p>
+  <footer id="contato">
+    <p>Entre em contato: <strong>+55 47 99187-5082</strong></p>
+    <p>“Vestir MARISEA é carregar a fé no peito.”</p>
   </footer>
+
 </body>
 </html>
+
